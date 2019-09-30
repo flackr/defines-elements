@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>defines-elements example</title>
+    <script type="module" src="fancy-button.js" defines-elements="fancy-button"></script>
+    <!-- Note: Only sees the elements defined by scripts above. -->
+    <script src="defines-elements.js"></script>
+  </head>
+  <body>
+    <h1>defines-elements polyfill</h1>
+    <p>This is a polyfill of the defines-elements concept. When a script is
+    declared to define types of elements those elements are hidden until the
+    script has loaded.</p>
+
+    <p>If after the script had loaded, the element type is still not defined,
+    an error is logged to the console to indicate to the developer that they
+    failed to define the element.</p>
+
+    <p>If you refresh the page you should not see the text "Test button"
+    unstyled</p>
+
+    <fancy-button>
+      <span slot="label">Test button</span>
+    </fancy-button>
+
+  </body>
+</html>
