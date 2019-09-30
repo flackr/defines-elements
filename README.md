@@ -3,7 +3,7 @@
 Scripts declare which elements they will define. Once loaded those elements
 become visible.
 
-See [live demo](https://flackr.github.io/defines-elements/) using the polyfill.
+See [live demo](https://flackr.github.io/defines-elements/index.html) using the polyfill.
 
 e.g.
 ```html
